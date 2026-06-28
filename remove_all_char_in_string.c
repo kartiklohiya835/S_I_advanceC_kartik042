@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    char a[]="hello world12";
+
+    int size1=sizeof(a)/sizeof(a[0]),j=0;
+    char b[size1];
+
+    for(int i=0;i<size1;i++)
+    {
+        if ((a[i]>='a'&& a[i]<='z')||(a[i]>='A'&&a[i]<='Z'))
+        {
+            b[j]=a[i];
+            j++;
+        }
+    }
+
+    b[j]='\0';
+
+    printf("%s", b);
+
+    return 0;
+}

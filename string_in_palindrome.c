@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() 
+{
+char a[8]="heleh",forward,rev;
+int size1=sizeof(a)/sizeof(a[0]);
+int size;
+for(int i=0;i<size1;i++)
+{
+  if(a[i]!='\0')
+  {
+ forward=a[i];
+  }
+  else if(a[i]=='\0')
+  {
+    size=i;
+    break;
+  }
+}
+for(int j=size-1;j>=0;j--)
+{
+  rev=a[j];
+}
+if(forward==rev)
+{
+  printf("palindrome");
+}
+else
+printf("not palin");
+  return 0;
+}

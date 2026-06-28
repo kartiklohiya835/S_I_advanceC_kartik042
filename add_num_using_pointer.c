@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+  int a,b;
+  scanf("%d%d",&a,&b);
+  int  *p=&a;
+  int  *p1=&b;
+  int temp=*p1+*p;
+  printf("sum=%d",temp);
+    return 0;
+}
